@@ -9,14 +9,12 @@ import java.util.Scanner;
 
 /**
  *
- * @author Sofia
+ * @author alumno
  */
 public class Ejercicio22 {
 
     /**
      * @param args the command line arguments
-     * se ingresa una nota, si es 10 mostrar excelente, si esta entre 9 y 4 
-     * mostrar aprobó , de lo contrario mostrar “ la próxima será” .
      */
     public static void main(String[] args) {
         // TODO code application logic here
@@ -30,16 +28,19 @@ public class Ejercicio22 {
         datoAux= misc.next();
         nota= Double.parseDouble(datoAux);
         
-        if(nota==10)
+        if( 10 ==nota)
         {System.out.println("Exelente");}
-        if ((nota< 9) && ( nota > 4))
+        
+        if ((nota<= 9) && ( nota >= 4))
         System.out.println("Aprobó");
-        else 
-            System.out.println("La proxima será"); }   
-            
+        
+        if (nota<4)
+        {System.out.println("desaprobó");}
        
+}}
         
-        
-    }
+       
+
+    
     
 
